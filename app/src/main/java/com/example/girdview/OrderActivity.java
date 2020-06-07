@@ -71,7 +71,8 @@ public class OrderActivity extends AppCompatActivity {
         placeorder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
-            {   final ProgressDialog pd = new ProgressDialog(OrderActivity.this);
+            {
+                final ProgressDialog pd = new ProgressDialog(OrderActivity.this);
                 pd.setTitle("Uploading Item....");
                 pd.show();
                 HashMap<String,ArrayList<Order>> hm = new HashMap<>();
